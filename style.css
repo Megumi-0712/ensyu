@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+ 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+ 
 .header {
     width: 100%; /* 横幅いっぱい */
     height: 120px; /* 高さ120px */
@@ -31,23 +38,23 @@
 }
  
 .main {
-    width: 100%; /* 横幅 */
-    /*heightが書いてある行を消す*/
+    width: 840px; /* 横幅 */
     background-color: green; /* 背景色 */
+    margin: 0 auto;
 }
 .blog {
-	width: 600px;
-	height: 600px;
-	background-color: limegreen;
-	float: left; /*要素を左揃えて並べる*/
+    width: 600px;
+    height: 1400px;
+    background-color: limegreen;
+    float: left; /* 要素を左揃えで並べる */
 }
 .sidebar {
-	width: 240px;
-	height: 600px;
-	background-color: palegreen;
-	float: left; /*要素を左揃えで並べる*/
+    width: 240px;
+    height: 1400px;
+    background-color: palegreen;
+    float: left; /* 要素を左揃えで並べる */
 }
-
+ 
 .footer {
     width: 100%; /* 横幅 */
     height: 120px; /* 高さ */
